@@ -1,0 +1,38 @@
+# Example site. Every `!placeholder` value is unknown for a real site; the loader
+# refuses this file unless called with allow_placeholders=True.
+# Units: MW, MWh, EUR/MWh, EUR/MW per accounting period; durations in 15-min slots.
+
+battery:
+  energy_capacity_mwh: !placeholder 2.0
+  soc_min_mwh: !placeholder 0.2
+  soc_max_mwh: !placeholder 1.9
+  p_charge_max_mw: !placeholder 1.0
+  p_discharge_max_mw: !placeholder 1.0
+  eta_charge: !placeholder 0.95
+  eta_discharge: !placeholder 0.95
+
+poi:
+  import_limit_mw: !placeholder 2.0
+  export_limit_mw: !placeholder 2.0
+
+tariff:
+  peak_price_eur_per_mw: !placeholder 10000.0
+  peak_accounting_period: month
+  volumetric_charge_eur_per_mwh: !placeholder 10.0
+  levies_eur_per_mwh: !placeholder 30.0
+
+market:
+  id_enabled: true
+  id_transaction_cost_eur_per_mwh: 0.5
+
+degradation:
+  cycle_limit_per_day: !placeholder 1.5
+
+afrr:
+  corridor_duration_slots: 1
+  free_energy_bids: false
+  capacity_lookback_days: 30
+  bid_policy_max_iter: 5
+
+solver:
+  forbid_simultaneous_charge_discharge: true
