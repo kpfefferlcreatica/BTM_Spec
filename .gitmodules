@@ -1,0 +1,3 @@
+[submodule "flexbid-btm-poi"]
+	path = flexbid-btm-poi
+	url = https://github.com/Flexbid/flexbid-btm-poi.git
