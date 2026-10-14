@@ -105,6 +105,7 @@ one-tick lag.
 05-implementation/ workstreams, sequencing, agent playbook
 06-theory/        technical notes: the analytic work behind a decision
 stubs/           C# interface stubs — signatures only, no bodies
+prototypes/      throwaway Python prototypes — not normative (pf_bound: foresight bound)
 ```
 
 ## The five architectural corrections
